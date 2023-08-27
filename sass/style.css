@@ -1,0 +1,484 @@
+@import url("base/variable.css");
+body {
+  font-family: "Fira Code", monospace;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.heading {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p, div, img, h1 {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes design {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+@keyframes design-2 {
+  0% {
+    border: 1px solid yellow;
+  }
+  100% {
+    rotate: 180deg;
+  }
+}
+.text-hide {
+  position: relative;
+  color: var(--primary-color);
+}
+
+.text-hide::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  color: var(--background);
+  background-color: var(--background);
+  width: 100%;
+  animation: text 5s steps(19) infinite;
+}
+
+@keyframes text {
+  to {
+    width: 0%;
+  }
+}
+.container {
+  width: 1024px;
+  margin: auto;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--background);
+  width: 100%;
+  z-index: 1;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 1024px;
+  margin: auto;
+}
+
+.site-title::before {
+  content: "#";
+  display: inline-block;
+  color: var(--primary-color);
+  margin-right: 4px;
+}
+.site-title::after {
+  content: "";
+  display: inline-block;
+  background-color: #C778DD;
+  margin-left: 13px;
+  width: 100px;
+  height: 1px;
+  position: absolute;
+  margin-top: 13px;
+}
+
+.logo a {
+  display: flex;
+  gap: 10px;
+}
+.logo a img {
+  background-color: var(--background);
+}
+
+.x-ch {
+  background-color: #C778DD;
+}
+
+.header-devider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.project-part {
+  padding-bottom: 5rem;
+}
+
+ul.main-nav {
+  list-style: none;
+}
+ul.main-nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+ul.main-nav li a::before {
+  content: "#";
+  display: inline-block;
+  color: var(--primary-color);
+  margin-right: 4px;
+}
+
+.home-container {
+  display: flex;
+  padding-bottom: 5rem;
+}
+
+.p-container {
+  padding: 100px;
+}
+
+.home-container-1 {
+  width: 50%;
+}
+.home-container-1 h2 {
+  font-family: "Fira Code", monospace;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-top: 5rem;
+}
+.home-container-1 p {
+  font-family: "Fira Code", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem 0;
+}
+
+.home-container-2 div img {
+  margin-left: 5rem;
+}
+.home-container-2 .img-box {
+  width: 25.125rem;
+  height: 2.2rem;
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  margin-left: 6.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.home-container-2 .img-box .img-sm-box {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: var(--primary-color);
+  margin-left: 0.5rem;
+}
+.home-container-2 .img-box .change-layout {
+  cursor: pointer;
+}
+
+.inner-head-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+}
+.inner-head-box .inner-box {
+  width: 44.5rem;
+  height: 5.93rem;
+  border: 1px solid var(--border-color);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner-head-box .inner-box > img {
+  position: absolute;
+  margin: 0 41rem 6rem 0;
+}
+.inner-head-box .inner-box2 {
+  width: 10.93rem;
+  height: 5.93rem;
+  border: 1px solid var(--border-color);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 75.25%;
+}
+.inner-head-box .inner-box2 > img {
+  position: absolute;
+  margin: 0 -8rem 6.5rem 0;
+}
+
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.skill-container {
+  display: flex;
+}
+.skill-container .s-box1 {
+  width: 40%;
+}
+.skill-container .s-box2 {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+}
+.skill-container .s-box2 .sm-box {
+  width: 32%;
+}
+.skill-container .s-box2 .sm-box .box {
+  width: 100%;
+  border: 1PX solid var(--border-color);
+}
+.skill-container .s-box2 .sm-box .box h2 {
+  border-bottom: 1px solid var(--border-color);
+  margin: 0 auto;
+  padding: 0.5rem;
+}
+.skill-container .s-box2 .sm-box .box p {
+  margin-left: 0.5rem;
+  color: var(--border-color);
+}
+.skill-container .s-box2 .m-top {
+  margin-top: 1rem;
+}
+
+.skil-part {
+  padding: 2rem 0 10rem 0;
+}
+
+.s-box-design {
+  display: flex;
+  gap: 30%;
+  margin-top: 2rem;
+}
+.s-box-design .extra-design {
+  position: relative;
+  animation-name: design;
+  animation-duration: 10s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.r-design {
+  animation-name: design-2;
+  animation-duration: 4s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+}
+
+.m-5 {
+  margin-top: 6rem;
+}
+
+.about-section {
+  display: flex;
+}
+.about-section .box1-about {
+  width: 50%;
+}
+.about-section .box1-about > p {
+  color: var(--border-color);
+  margin-bottom: 2rem;
+}
+
+.img-container img {
+  margin: 0 5rem 0 5rem;
+  display: block;
+}
+.img-container hr {
+  height: 5px;
+  width: 300px;
+  background-color: var(--primary-color);
+  display: block;
+}
+
+.contact-front {
+  padding: 0 0 3rem 0;
+}
+
+.contact-container {
+  display: flex;
+}
+.contact-container .c-box1 {
+  width: 50%;
+}
+.contact-container .c-box1 p {
+  color: var(--border-color);
+  margin-top: 2rem;
+}
+.contact-container .c-box2 {
+  width: 50%;
+}
+.contact-container .c-box2 .contact-info {
+  width: 14rem;
+  height: 8rem;
+  border: 1px solid var(--border-color);
+  float: right;
+  color: var(--text-color);
+}
+
+.hr {
+  width: 100%;
+  height: 0.5px;
+  background-color: var(--border-color);
+  margin: 1rem 0 1rem 0;
+}
+
+@media screen and (min-width: 480px) {
+  .body {
+    width: 100%;
+  }
+  .body .container {
+    width: 100%;
+    margin: auto;
+    background-color: red;
+  }
+}
+.btn {
+  height: 2.3rem;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: #fff;
+}
+.btn:hover {
+  background-color: var(--border-color);
+  cursor: pointer;
+}
+
+.btn-lg {
+  width: 9.25rem;
+  color: var(--text-color);
+}
+
+.btn-sm {
+  width: 105px;
+  color: var(--text-color);
+}
+
+.card {
+  width: 330px;
+  border: 1px solid var(--border-color);
+}
+.card .card-header {
+  border-bottom: 1px solid var(--border-color);
+  padding: 7px;
+  color: var(--border-color);
+}
+.card .card-content {
+  padding: 7px;
+}
+.card .card-content h1 {
+  font-size: 32px;
+  padding: 10px 0;
+  color: var(--text-color);
+}
+.card .card-content p {
+  padding-bottom: 8px;
+  color: var(--border-color);
+}
+
+.extra-design {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.r-design {
+  width: 5rem;
+  height: 5rem;
+  border: 1px solid var(--border-color);
+}
+
+.pop-up {
+  width: 500px;
+  height: 150px;
+  background-color: #219b42;
+  margin: auto;
+  position: absolute;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 2;
+}
+.pop-up .pop-up-header {
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.pop-up .pop-up-header button {
+  width: 2rem;
+  height: 2rem;
+}
+.pop-up .pop-up-header p {
+  color: #000;
+  font-size: 32px;
+}
+.pop-up .pop-up-footer {
+  display: flex;
+  padding: 1rem 1rem 0 1rem;
+  gap: 0.2rem;
+}
+.pop-up .pop-up-footer .btn1 {
+  background-color: var(--primary-color);
+}
+.pop-up .pop-up-footer > .btn {
+  color: #000;
+}
+.pop-up .pop-up-footer > .btn:hover {
+  background-color: var(--primary-color);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.change {
+  background-color: red;
+}
+
+#overlay {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}/*# sourceMappingURL=style.css.map */

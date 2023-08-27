@@ -1,0 +1,28 @@
+// $background : #282C33;
+// $primary-color: #C778DD;
+// $border-color: #ABB2BF;
+// $text-color: #fff;
+// $link-color: $text-color;
+
+
+// $primary-font-style: 'Fira Code', monospace;
+
+// $heading-font-size: 32px;
+// $body-font-size: 16px;
+
+// $container-width: 1024px;
+
+
+$background : var(--background);
+$primary-color: var(--primary-color);
+$border-color: var(--border-color);
+$text-color: var(--text-color);
+$link-color: $text-color;
+
+
+$primary-font-style: 'Fira Code', monospace;
+
+$heading-font-size: 32px;
+$body-font-size: 16px;
+
+$container-width: 1024px;

@@ -1,0 +1,24 @@
+body {
+    font-family: $primary-font-style;
+    font-size: $body-font-size;
+    margin: 0;
+    padding: 0;
+    background-color: $background;
+    color: $text-color;
+}
+.heading {
+    font-size: $heading-font-size;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+p,div,img,h1{
+    margin: 0;
+    padding: 0;
+}
+
+

@@ -1,0 +1,115 @@
+.btn{
+    height: 2.3rem;
+    background-color: transparent;
+    border: 1px solid $primary-color;
+    color: #fff;
+    &:hover{
+        background-color: $border-color;
+        cursor: pointer;
+        
+    }
+}
+.btn-lg{
+    width: 9.25rem;
+
+}
+.btn-sm{
+    width: 105px;
+}
+.card{
+    width: 330px;
+    border: 1px solid $border-color;
+    .card-header{
+        border-bottom: 1px solid $border-color;
+        padding: 7px;
+        color: $border-color;
+      
+    }
+    .card-content{
+        padding: 7px;
+        h1{
+            font-size:$heading-font-size ;
+            padding: 10px 0;
+        }
+        p{
+            padding-bottom:8px ;
+            color: $border-color;
+        }
+    }
+}
+
+
+.extra-design{
+    display: flex;
+    gap: 0.5rem;
+}
+.r-design{
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid $border-color;
+}
+
+
+// popup for bg-color
+.pop-up{
+    width: 500px;
+    height: 150px;
+    background-color: #219b42;
+    margin: auto;
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 2;
+    .pop-up-header{
+        display: flex;
+        padding: 1rem 1rem 0 1rem;
+        justify-content: space-between;
+        align-items: center;
+        button{
+           width: 2rem;
+           height: 2rem;
+        }
+        p{
+            color: #000;
+            font-size: $heading-font-size;
+      
+        }
+       
+    }
+    .pop-up-footer{
+        display: flex;
+        padding: 1rem 1rem 0 1rem;
+        gap: 0.2rem;
+        .btn1{
+            background-color: $primary-color;
+        }
+        >.btn{
+            color: #000;
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+
+}
+button:hover{
+    cursor: pointer;
+}
+.change{
+    background-color: red;
+}
+
+#overlay{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 1;
+}

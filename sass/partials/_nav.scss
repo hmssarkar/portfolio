@@ -1,0 +1,17 @@
+ul {
+    &.main-nav {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-left: 20px;
+            a {
+                &::before {
+                    content: "#";
+                    display: inline-block;
+                    color: $primary-color;
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}

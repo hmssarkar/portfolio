@@ -1,0 +1,40 @@
+
+@keyframes design{
+    0%   {left:0px; top:0px;}
+    25%  {left:200px; top:0px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:0px; top:200px;}
+    100% {left:0px; top:0px;}
+  }
+
+@keyframes design-2{
+    0%{
+        border: 1px solid yellow;
+    }
+    100%{
+        rotate: 180deg;
+    }
+}
+
+
+// text animation
+.text-hide{
+    position: relative;
+    color:$primary-color;
+}
+.text-hide::after{
+    content: "|";
+    position: absolute;
+    right: 0;
+    color: $background;
+    background-color: $background;
+    width: 100%;
+    animation: text 5s steps(19) infinite;
+}
+
+@keyframes text{
+    to{
+        width: 0%;
+    }
+    
+}

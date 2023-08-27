@@ -1,0 +1,207 @@
+.home-container{
+    display: flex;
+    padding-bottom: 5rem;
+}
+.p-container{
+    padding: 100px;
+}
+// .fream49{
+//     position: absolute;
+//     top: 0;
+// }
+.home-container-1{
+    width: 50%;
+    h2{
+        font-family: $primary-font-style;
+        font-weight: 700;
+        font-size: 2rem;
+        margin-top:5rem ;
+    }
+    p{
+        font-family: $primary-font-style;
+        font-weight: 400;
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+}
+.home-container-2{
+    div{
+        img{
+            margin-left:5rem ;
+        }
+    }
+    .img-box{
+        width: 25.125rem;
+        height: 2.2rem;
+        border: 1px solid $text-color;
+        background-color: transparent;
+        margin-left: 6.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        .img-sm-box{
+            width: 1.5rem;
+            height: 1.5rem;
+            background-color: $primary-color;
+            margin-left: 0.5rem;
+        }
+        .change-layout{
+            cursor: pointer;
+        }
+    }
+}
+
+.inner-head-box{
+    display: flex;
+    justify-content: center;
+    padding-bottom:4rem ;
+    .inner-box{
+        width: 44.5rem;
+        height: 5.93rem;
+        border: 1px solid $border-color;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        >img{
+            position: absolute;
+            margin:0 41rem 6rem 0;
+            
+        }
+    }
+    .inner-box2{
+        width: 10.93rem;
+        height: 5.93rem;
+        border: 1px solid $border-color;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 75.25%;
+        >img{
+            position: absolute;
+            margin: 0 -8rem 6.5rem 0;
+        }
+    }
+}
+
+.card-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+// skill part started
+.skill-container{
+    display: flex;
+    .s-box1{
+        width: 40%;
+
+    }
+    .s-box2{
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        .sm-box{
+            width: 32%;
+            .box{
+                width: 100%;
+                border: 1PX solid $border-color;
+                h2{
+                    border-bottom: 1px solid $border-color;
+                    margin: 0 auto;
+                    padding: 0.5rem;
+                }
+                p{
+                    margin-left: 0.5rem;
+                    color: $border-color;     
+                }
+            }
+        }
+        .m-top{
+            margin-top: 1rem;
+        }
+    }
+}
+.skil-part{
+    padding: 2rem 0  10rem 0;
+}
+.s-box-design{
+    display: flex;
+    gap: 30%;
+    margin-top: 2rem;
+    .extra-design{
+        position: relative;
+        animation-name: design;
+        animation-duration: 10s;
+        animation-delay: 5s;
+        animation-iteration-count: infinite;
+    }
+    
+}
+.r-design{
+    animation-name: design-2;
+    animation-duration: 4s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+}
+.m-5{
+    margin-top: 6rem;
+}
+
+// new section started
+.about-section{
+    display: flex;
+    .box1-about{
+        width: 50%;
+        >p{
+            color: $border-color;
+            margin-bottom: 2rem;
+        }
+    }
+}
+.img-container{
+  img{
+    margin:0 5rem 0 5rem ;
+    display: block;
+  }
+  hr{
+    height: 5px;
+    width: 300px;
+    background-color: $primary-color;
+    display: block;
+  }
+}
+
+// new contact section
+.contact-front{
+    padding: 0 0 3rem 0;
+}
+.contact-container{
+    display: flex;
+    .c-box1{
+        width: 50%;
+        p{
+            color: $border-color;
+            margin-top: 2rem;
+        }
+    }
+    .c-box2{
+        width: 50%;
+        .contact-info{
+            width: 14rem;
+            height: 8rem;
+            border: 1px solid $border-color;
+            float: right;
+            color: $text-color;
+        }
+    }
+}
+
+// new footer section start
+.hr{
+    width: 100%;
+    height: 0.5px;
+    background-color: $border-color;
+    margin: 1rem 0 1rem 0;
+}
