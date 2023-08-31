@@ -1,10 +1,93 @@
-@media screen and (min-width: 480px) {
-    .body{
-        width: 100%;
-        .container {
-            width: 100%;
-            margin: auto;
-            background-color: red;
-          }
+@media screen and (max-width: 950px) {
+  .site-header{
+    width: 1vw;
+    justify-content: space-between;
+    margin: 1px;
+    #nav
+      {
+      display: none;
+      position: absolute;
+      background-color: #141414;
+      right: 0;
+      top: 0;
+      z-index: 1;
+      
+      >li{
+        display: block;
+        margin-left: 0 !important;
+        padding: 20px 70px 20px 0;
+
+      }
+    }
+    .toggle-icon{
+      opacity: 1;
+      visibility: visible;
     }
   }
+  .cross{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    margin: 0.3rem 0.3rem;
+    // padding: 2px;
+    width: 25px;
+    height: 25px;
+    border: 0.2px solid #ffffff8c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+ 
+  .home-container{
+    display: block;
+}
+
+.home-container-2{
+  display: none;
+  position: absolute;
+}
+
+.container{
+  width: 1vw;
+  margin: 0 0 0 5px ;
+
+}
+.inner-head-box{
+  display: none;
+  // position: absolute;
+}
+.view-arrow{
+  display: none;
+}
+.card-box{
+  display: block;
+  // justify-content: center;
+  width: 1vw;
+  margin: auto;
+}
+.project-part{
+  margin: auto;
+}
+
+// grid box
+.grid-container{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+}
+
+
+
+
+//  media device  max 450 
+
+@media screen and (max-width: 550px){
+  .grid-container{
+    display: block;
+    
+  }
+}

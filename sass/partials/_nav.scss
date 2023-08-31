@@ -1,17 +1,36 @@
 ul {
     &.main-nav {
         list-style: none;
-        li {
+        transition: 5s;
+        li{
             display: inline-block;
             margin-left: 20px;
-            a {
-                &::before {
+            
+            a{
+                &.active{
+                    color: $primary-color;
+                }
+                &::before{
                     content: "#";
                     display: inline-block;
                     color: $primary-color;
                     margin-right: 4px;
                 }
+                
             }
         }
     }
+}
+.cross{
+    display: none;
+    position: absolute;
+}
+
+.toggle-icon{
+    position: absolute;
+    color: #fff;
+    top: 40%;
+    right: 5%;
+    opacity: 0;
+    visibility: hidden;
 }

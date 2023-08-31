@@ -14,14 +14,9 @@
 
     <!-- jquery cdn -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
-  
-    <!-- <script type="text/javascript">
-        $(document).ready(function(){
-    $("button").click(function(){
-      $("body").css("background-color", "yellow");
-    });
-  });
-    </script> -->
+    <!-- javascript file link -->
+    <script type="text/javascript" src="js/main.js"></script>
+
 </head>
 <body class="change-bg">
     <div class="header">    
@@ -32,10 +27,10 @@
                     <h1>Elias</h1>
                 </a>
             </div>
-            <nav>
-                <ul class="main-nav">
+            <nav >
+                <ul class="main-nav"  id="nav" >
                     <li>
-                        <a href="#">Home</a>
+                        <a href="#" class="active">Home</a>
                     </li>
                     <li>
                         <a href="#">Work</a>
@@ -49,11 +44,15 @@
                     <li>
                         <a href="#">Eng <i class="fa-solid fa-caret-down"></i></a>
                     </li>
+                    <span class="cross" id="cross" onclick="cross()">&times</span>
                 </ul>
             </nav>
+            <div class="toggle-icon" id="toggle-icon" onclick="icon()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
         </header>
     </div>
-    <div class="container p-container">
+     <div class="container p-container">
         <div class="home-container">
             <div class="home-container-1">
                 <h2 >Elias is a web designer and <span class="text-hide" >front-end developerr</span></h2>
@@ -72,26 +71,27 @@
             </div>
         </div>
 
-    <div class="inner-head-box">
-            <div>
+   <div class="inner-head-box">
+            <div>               
                     <div class="inner-box">  <img  src="images/Frame 50.png" alt="">  With great power comes great electricity bill</div>
                     <div class="inner-box2">- Dr. Who <img  src="images/Frame 50.png" alt=""></div>
-                    <!-- <img class="fream49" src="images/Frame 49.png" alt=""> -->
             </div>
             <div></div>
-    </div>
+    </div> 
 <!-- new section started -->
-    <section class="project-part">
+     <section class="project-part">
         <div class="header-devider">
             <div class="">
                 <h2 class="site-title">Projects</h2>
             </div>
-            <div class="">view all <i class="fa-solid fa-arrow-right"></i> </div>
+            <div class="view-arrow">view all <i class="fa-solid fa-arrow-right"></i> </div>
         </div>
 
-        <div class="card-box">
+        <!-- <div class="card-box" >  -->
+        <div class="grid-container" > 
             <!-- card 1 -->
-            <div class="card-sm card">
+             <div class="card-sm card">
+
                 <div class="card-img"><img src="images/rc.png" alt=""></div>
                 <div class="card-header">
                     <p>HTML CSS Python Flask</p>
@@ -104,7 +104,7 @@
                         <button class="btn btn-sm">Cached</button>
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <!-- card 2 -->
             <div class="card-sm card">
@@ -118,12 +118,11 @@
                     <p>Minecraft servers hosting </p>
                     <div>
                         <button class="btn btn-sm">Live</button>
-                        <!-- <button class="btn btn-sm">Cached</button> -->
                     </div>
                 </div>
-            </div>
+            </div> 
             <!-- card 3 start -->
-            <div class="card-sm card">
+              <div class="card-sm card">
                 <div class="card-img"><img src="images/Rectangle 22.png" alt=""></div>
                 <div class="card-header">
                     <p>HTML CSS Python Flask</p>
@@ -141,18 +140,16 @@
 
         </div>
 
-    </section>
+    </section>  
     <!-- new section startes -->
-<section class="skil-part">
+ <!-- <section class="skil-part">
     <div class="header-devider">
         <div class="">
             <h2 class="site-title">Skills</h2>
-        <!-- </div>
-        <div class="">view all <i class="fa-solid fa-arrow-right"></i> </div> -->
         </div>
-    </div>
+    </div> 
 
-    <div class="skill-container">
+     <div class="skill-container">
         <div class="s-box1">
            <div class="s-box-design">
             <div class="extra-design">
@@ -209,10 +206,10 @@
         </div>
     </div>
 
-</section>    
+</section>     -->
 
 <!-- new section -->
-<section>
+<!-- <section>
    
     <div class="about-section">
         <div class="box1-about">
@@ -254,11 +251,11 @@
         </div>
     </div>
 
-</section>
+</section>  -->
 
 <!-- background change pop up start -->
-
-<div class="pop-up" id="pop-up">
+<!-- 
+ <div class="pop-up" id="pop-up">
     <div class="pop-up-header">
         <p>Choose Layout</p>
         <button onclick="of()" id="close">&times;</button>
@@ -280,9 +277,9 @@
     <div class=""><img src="images/Logo.svg" alt=""> <span>elias</span> </div>
 </footer>
 
-<div id="overlay"></div>
+<div id="overlay"></div>  -->
 
-<script type="text/javascript" src="js/main.js"></script>
+<!-- <script type="text/javascript" src="js/main.js"></script> -->
 
 </body>
 </html>
